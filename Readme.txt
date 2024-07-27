@@ -17,3 +17,11 @@ moves back to working aread from staging area.
 9. 'git commit' -> register staging changes to repository area or commit.
 
 10. 'git log' -> list down all the  commits of the repo.
+
+11. 'git restore --staged <file>' ->
+It removes all files changed from staging to working area. This is only works if changes are in our staging area.
+
+12. 'git restore <file>' -> It removes all file changes from the staging area to commited .
+
+13. '' -> If we don't want to commit by using vim editor then we can use command like that : 
+   'git commit -m'
