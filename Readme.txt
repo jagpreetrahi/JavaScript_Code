@@ -25,3 +25,18 @@ It removes all files changed from staging to working area. This is only works if
 
 13. '' -> If we don't want to commit by using vim editor then we can use command like that : 
    'git commit -m'
+
+14. 'git remote' -> list down all the remote connection names.
+
+15. 'Remote Connection' -> It helps to link two git repo for uploading and downloading changes  from each
+
+16. 'git remote add <name of remote>
+<link of the remote> -> This command helps to add a new link to the remote repo and give a name to it.
+
+17. ' git remote rm <name of remote>' -> this command deletes a remote connection .
+
+
+18. 'git remote rename <oldname> <newName> '
+
+
+
