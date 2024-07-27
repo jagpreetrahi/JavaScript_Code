@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Toe Game</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+     .board
+     {
+         display: grid;
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(3,100px);
+        gap: 3px;
+      }
+
+     .cell {
+          width: 100px;
+          height: 100px;
+          background-color: #eee;
+          align-items: center;
+          justify-content: center;
+          display: flex;
+          font-size: 2em;
+        }
+
+       .h1
+       {
+         margin: 0px;
+         padding: 0px;
+          font-size: medium;
+          color: blueviolet;
+        }    
+    </style>
+    
+</head>
+<body>
+    <h1>Welcome to Tic Toe Game</h1>
+    <div class="board"></div>
+
+   
+    <script >
+        
+       const board = document.querySelector('.board');
+       let curretPlayer = 'X';
+        const cells = [];
+
+    //  crete the game board
+
+       for(let i = 0; i<9; i++)
+     {
+
+        const cell = document.createElement('div');
+        cell.classlists.add('cell');
+        cell.dataset.index = i;
+        cell.addEventListener('click' , handlecellClick);
+        board.appendChild(cell);
+        cells.push(cell);
+
+
+      }
+
+        function handlecellClick()
+        {
+           if(this.textContent !== '' || checkwinner()) return;
+           this.textContent = curretPlayer;
+           if(checkwinner())
+           {
+              alert('Player' + curretPlayer + 'wins');
+            }
+           else if(isboardFull())
+           {
+               alert('It is draw!');
+            }
+            else{
+              currentPlayer == 'X' ? 'O' : 'X';
+            }
+        }
+
+          function checkwinner()
+          {
+             const winningCombos = [
+             [0 ,1 , 2] , [3 , 4 , 5] , [6 , 7 , 8 ] , // rows
+              [0 , 3 , 6] , [1 , 4 , 7] , [2 , 5 , 8], // columns
+               [0 , 4 , 8] , [2 , 4 , 6] // diagonals
+
+             ];
+
+             for(const combo of winningCombos)
+               {
+                 const [a , b , c] = combo;
+                  if(cells[a].textContent === cells[b].textContent === cells[c].textContent)
+                    {
+                        return true;
+                    }
+                }
+                return false;
+           
+            }
+
+            function isboardFull()
+            {
+               return cells.every(cell => cell.textContent !== '');
+            }
+
+    </script>
+
+</body>
+</html>

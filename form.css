@@ -1,0 +1,31 @@
+*{
+
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient( to top right ,#1a97c8, #e01893 );
+}
+
+.Switch
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 40px;
+}
+
+label:hover
+{
+    background-color: purple;
+    
+  
+    transition: transform 0.3 ease;
+    transform: translateX(100px);
+}
