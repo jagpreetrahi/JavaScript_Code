@@ -1,0 +1,19 @@
+1. 'git init' -> It createa a .git folder that has all the relevant info to manage the version of our project.
+
+2. 'Working Area' -> There can be some files   are not currently managed by git which means that changes done or to be done in those files are not managed by git yet. When we do 'git status' and see the untracked files then those are actually called to be in working area.
+
+
+3.'Staging Area' -> which files are going to be a part of next version that will create . In this area git knows what changes will be done from prev version to next version.
+
+4.'Repository Area' -> This area actually contains the details of all the previous registered version.
+
+5. 'git add <file>' -> moves from working to staged area.
+
+6. 'git rm --cache <file>' ->
+moves back to working aread from staging area.
+
+8. 'Commit' -> It is a particular version of the project.
+
+9. 'git commit' -> register staging changes to repository area or commit.
+
+10. 'git log' -> list down all the  commits of the repo.
