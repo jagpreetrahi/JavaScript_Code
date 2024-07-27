@@ -36,7 +36,7 @@ It removes all files changed from staging to working area. This is only works if
 17. ' git remote rm <name of remote>' -> this command deletes a remote connection .
 
 
-18. 'git remote rename <oldname> <newName> '
+18. 'git remote rename <oldname> <newName> '.
 
 
 
