@@ -1,5 +1,5 @@
 
-import { read, write } from 'fs';
+
 import {readFile , writeFile} from  'fs/promises';
 const filepath = new URL('./index.html' , import.meta.url);
 
