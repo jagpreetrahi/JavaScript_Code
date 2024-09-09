@@ -24,3 +24,5 @@ console.log(0-"0xc");
 console.log(0-"0xd");
 console.log(0-[]);
 console.log(0-0xd);
+
+

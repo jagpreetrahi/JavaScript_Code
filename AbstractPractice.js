@@ -28,9 +28,10 @@ console.log((!x) == obj1)
 console.log(Symbol == obj);
 
 let y = undefined;
-
 console.log(" " == y);
 
+
+// Coercoin Case
 console.log({} + {});
 console.log("" + {});
 console.log("" + [1]);
